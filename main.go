@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 	"superchips/core"
 )
 
@@ -15,6 +16,9 @@ func main() {
 		fmt.Printf("Prev. Hash: %x\n", block.PrevBlockHash)
 		fmt.Printf("Data:       %s\n", block.Data)
 		fmt.Printf("Block Hash: %x\n", block.Hash)
+		fmt.Printf("Nonce:      %d\n", block.Nonce)
+		pow := core.NewProof(block)
+		fmt.Printf("PoW:%s\n", strconv.FormatBool(pow.Validate()))
 		fmt.Println()
 	}
 }
