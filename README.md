@@ -1,2 +1,3 @@
 # superchips
-Superchips is a self-contained peer-to-peer transaction network. It uses a custom blockchain architecture where the base currency unit, a Super, is minted through block mining and can be broken down into millions of individual chips to handle micro-payments and network fees without relying on a central coordinator.
+
+**Superchips** is a distributed, self-contained transaction network built from the ground up to demonstrate the foundational primitives of peer-to-peer cryptographic ledgers. The architecture translates standard blockchain theory into practice using an unspent transaction output (UTXO) data model, a secure SHA-256 Proof-of-Work mining sequence, and localized key-value storage persistence. The system's monetary framework introduces the _Super_ as a scarce network asset, supported by a highly divisible sub-unit called the _Chip_ to enable low-overhead micro-payments and deterministic network fee routing.
